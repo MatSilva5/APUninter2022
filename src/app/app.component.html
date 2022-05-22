@@ -1,0 +1,27 @@
+<div>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <span class="app-text">SPA With Bootstrap</span>
+    </div>
+  </nav>
+  <div class="data-grid">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">RU</th>
+          <th scope="col">Nome do Curso</th>
+          <th scope="col">Data de Aniversário</th>
+        </tr>
+      </thead>
+      <tbody  *ngFor="let aluno of alunos">
+        <tr>
+          <td>{{aluno.nome}}</td>
+          <td>{{aluno.ru}}</td>
+          <td>{{aluno.nomeCurso}}</td>
+          <td>{{aluno.dataAniversario}}</td>
+        <tr>
+      </tbody>
+    </table>
+  </div>
+</div>
